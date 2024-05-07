@@ -1,10 +1,6 @@
 # Final-Programaci-n
 App Health Track es una aplicación de seguimiento de salud que te ayuda a registrar tu peso, medidas corporales, objetivos saludables y más.
 
-
-
-Instalación
-Clona este repositorio en tu máquina local:
 ```bash
 git clone https://github.com/tu_usuario/AppHealthTrack.git
 
