@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Maite",
+        "peso_inicial": 60.0,
+        "altura": 1.61,
+        "medidas": {
+            "pecho": 80.0,
+            "cintura": 70.0,
+            "caderas": 70.0
+        },
+        "objetivos": [
+            "Comer mejor, bajar grasa corporal."
+        ],
+        "fecha_peso_inicial": "2024-01-01"
+    },
+    {
+        "nombre": "Lola",
+        "peso_inicial": 80.0,
+        "altura": 2.0,
+        "medidas": {
+            "pecho": 90.0,
+            "cintura": 60.0,
+            "caderas": 90.0
+        },
+        "objetivos": [
+            "Sentirme mejor, aumentar músculo."
+        ],
+        "fecha_peso_inicial": "2020-02-03"
+    },
+    {
+        "nombre": "Lorena",
+        "peso_inicial": 50.0,
+        "altura": 1.5,
+        "medidas": {
+            "pecho": 60.0,
+            "cintura": 40.0,
+            "caderas": 60.0
+        },
+        "objetivos": [
+            "Volverme más fuerte, comer mejor."
+        ],
+        "fecha_peso_inicial": "2024-01-27"
+    }
+]
