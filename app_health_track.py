@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 from usuario import Usuario
 import matplotlib.pyplot as plt
-
+ 
 class AppHealthTrack:
     def __init__(self):
         """
@@ -64,6 +64,28 @@ class AppHealthTrack:
             print("No se encontró el archivo de usuarios. Se creará uno nuevo al guardar datos.")
 
     # Otros métodos de la clase...
+    def mostrar_progreso(self, nombre_usuario):
+        """
+        Muestra el progreso de peso de un usuario a lo largo del tiempo.
+
+        Args:
+            nombre_usuario (str): El nombre del usuario cuyo progreso se va a mostrar.
+        """
+        for usuario in self.usuarios:
+            if usuario.nombre == nombre_usuario:
+                if len(usuario.historial_pesos) > 1:
+                    plt.plot(usuario.fechas_pesos, usuario.historial_pesos, marker='o', linestyle='-')
+                    plt.title(f"Progreso de peso para {nombre_usuario}")
+                    plt.xlabel("Fecha")
+                    plt.ylabel("Peso (kg)")
+                    plt.xticks(rotation=45)
+                    plt.grid(True)
+                    plt.tight_layout()
+                    plt.show()
+                else:
+                    print(f"No hay suficientes datos de peso registrados para {nombre_usuario}.")
+                return
+        print(f"No se encontró el usuario {nombre_usuario}.")
 
     def ejecutar_aplicacion(self):
         """
